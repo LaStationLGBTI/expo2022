@@ -1,0 +1,147 @@
+# Hey, thanks for using my theme. If you like this theme,checkout my repo (https://gitlab.com/avron/gruvhugo"
+# and drop a star while you're at it. ;)
+baseurl = "https://expo2022.lastation-lgbti.eu"
+title = "Appel à candidature - La Station LGBTI+"
+languageCode = "fr-fr"
+paginate = "10" # Number of posts per page
+#disqusShortname = "" # Enable comments by entering your Disqus shortname
+#googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+#-------------------------------------------------------------------------------
+# DEFAULT SETTINGS
+#-------------------------------------------------------------------------------
+
+# Default Theme
+theme= "gruvhugo"
+
+# Default Post Extension
+defaultExtension= "html"
+
+# Default metadata format for newly created frontmatter using
+# hugo new command. "toml", "yaml", or "json"
+metaDataFormat= "yaml"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "exposition, lgbti"
+  headerTitle = "Appel à candidature"
+  copyright = "La Station LGBTI+"
+  name = "la_station_lgbti.eu"
+  img = "img/logo.png"
+  img_title = "Appel à candidature"
+  icon = "img/logo.png"
+  quote = "Appel à candidature"
+  description= """
+  La Station LGBTI+ de Strasbourg recherche des artistes à exposer pour l'année 2022 !
+
+  **Où ça ?**\\
+  Les expositions se font dans notre local au 7 rue des écrivains, près de la cathédrale, à Strasbourg.
+
+  **Comment faire ?**\\
+  Envoie-nous ton portfolio (site web, réseaux sociaux, photos,…) avec une petite description de toi et de ton travail à l'adresse **expositions@lastation-lgbti.eu**
+
+  **Quand ?**\\
+  Les candidatures sont à envoyer avant le 15 janvier 2022 !
+  """
+  licenseUrl = ""
+
+ # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:exposition@lastation-lgbti.eu"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "https://instagram.com/la_station_lgbti/"
+
+  [[params.social]]
+    name = "facebook"
+    url  = "https://facebook.com/lastation.lgbti"
+
+[params.style]
+  # add path to custom CSS files here
+  custom_css = []
+  # add path to custom SCSS files here
+  custom_scss = []
+
+# [menu]
+#   [[menu.main]]
+#     identifier = "about"
+#     name       = "About"
+#     url        = "about"
+#
+#   [[menu.main]]
+#     identifier = "posts"
+#     name       = "Posts"
+#     url        = "post/"
+#
+#   [[menu.main]]
+#     identifier = "wiki"
+#     name       = "Wiki"
+#     url        = "none"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
