@@ -3,7 +3,6 @@
 baseurl = "https://expo2022.lastation-lgbti.eu"
 title = "Appel à candidature - La Station LGBTI+"
 languageCode = "fr-fr"
-paginate = "10" # Number of posts per page
 #disqusShortname = "" # Enable comments by entering your Disqus shortname
 #googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 #-------------------------------------------------------------------------------
@@ -84,6 +83,9 @@ metaDataFormat= "yaml"
 #     identifier = "wiki"
 #     name       = "Wiki"
 #     url        = "none"
+
+[pagination]
+  pagerSize = 10
 
 [markup]
   defaultMarkdownHandler = "goldmark"
